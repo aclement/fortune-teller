@@ -1,0 +1,37 @@
+<applications>
+  <versions__delta>1</versions__delta>
+  <apps__hashcode>UP_1_</apps__hashcode>
+  <application>
+    <name>UI</name>
+    <instance>
+      <hostName>fortunes-ui-ftasc.cfapps.io</hostName>
+      <app>UI</app>
+      <ipAddr>10.254.1.66</ipAddr>
+      <status>UP</status>
+      <overriddenstatus>UNKNOWN</overriddenstatus>
+      <port enabled="true">80</port>
+      <securePort enabled="false">443</securePort>
+      <countryId>1</countryId>
+      <dataCenterInfo class="com.netflix.appinfo.InstanceInfo$DefaultDataCenterInfo">
+        <name>MyOwn</name>
+      </dataCenterInfo>
+      <leaseInfo>
+        <renewalIntervalInSecs>30</renewalIntervalInSecs>
+        <durationInSecs>90</durationInSecs>
+        <registrationTimestamp>1438116830873</registrationTimestamp>
+        <lastRenewalTimestamp>1438117611054</lastRenewalTimestamp>
+        <evictionTimestamp>0</evictionTimestamp>
+        <serviceUpTimestamp>1438116800843</serviceUpTimestamp>
+      </leaseInfo>
+      <metadata class="java.util.Collections$EmptyMap"/>
+      <homePageUrl>http://fortunes-ui-ftasc.cfapps.io:80/</homePageUrl>
+      <statusPageUrl>http://fortunes-ui-ftasc.cfapps.io:80/info</statusPageUrl>
+      <healthCheckUrl>http://fortunes-ui-ftasc.cfapps.io:80/health</healthCheckUrl>
+      <vipAddress>ui</vipAddress>
+      <isCoordinatingDiscoveryServer>false</isCoordinatingDiscoveryServer>
+      <lastUpdatedTimestamp>1438116830873</lastUpdatedTimestamp>
+      <lastDirtyTimestamp>1438116810794</lastDirtyTimestamp>
+      <actionType>ADDED</actionType>
+    </instance>
+  </application>
+</applications>

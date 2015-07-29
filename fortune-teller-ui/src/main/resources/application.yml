@@ -5,6 +5,8 @@ eureka:
   client:
     registryFetchIntervalSeconds: 5
 
+
+      
 fortunes:
   ribbon:
     ServerListRefreshInterval: 5000
@@ -14,15 +16,39 @@ fortunes:
 spring:
   profiles: pact
 
-ribbon:
-  eureka:
-    enabled: false
+#ribbon:
+#  eureka:
+#    enabled: false
+
+#hystrix:
+#  command:
+#    randomFortune:
+#      execution.isolation.thread.timeoutInMilliseconds: 200000
+      
+# hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 200000
 
 hystrix:
   command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 30000
+        timeout:
+          enabled: false
     randomFortune:
-      execution.isolation.thread.timeoutInMilliseconds: 2000
+      execution:
+        timeout:
+          enabled: false
+        isolation:
+          thread:
+            timeoutInMilliseconds: 30000
 
-fortunes:
-  ribbon:
-    listOfServers: localhost:8080
+ribbon:
+  ConnectTimeout: 3000
+  ReadTimeout: 60000          
+
+#fortunes:
+#  ribbon:
+#    listOfServers: http://fortunes-ftasc.cfapps.io/
+#    listOfServers: localhost:8080

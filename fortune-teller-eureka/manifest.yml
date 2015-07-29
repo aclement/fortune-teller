@@ -1,0 +1,10 @@
+---
+memory: 384M
+instances: 1
+applications:
+- name: eureka-ftasc
+  host: eureka-ftasc
+#  path: target/fortune-teller-eureka-0.0.1-SNAPSHOT.jar
+  domain: cfapps.io
+  env:
+    eureka_uri: http://eureka-ftasc.cfapps.io

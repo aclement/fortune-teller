@@ -19,10 +19,13 @@ public class FortuneController {
     public Iterable<Fortune> fortunes() {
         return repository.findAll();
     }
-
+ 
     @RequestMapping("/random")
     public Fortune randomFortune() {
         List<Fortune> randomFortunes = repository.randomFortunes(new PageRequest(0, 1));
-        return randomFortunes.get(0);
+        System.out.println("Foobar");
+        Fortune f = randomFortunes.get(0);
+        String text = f.getText();
+        return f;
     }
 }

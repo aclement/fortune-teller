@@ -1,0 +1,7 @@
+---
+memory: 384M
+instances: 1
+applications:
+- name: config-server-ftasc
+  host: config-server-ftasc
+  domain: cfapps.io
