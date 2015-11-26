@@ -4,9 +4,9 @@ instances: 1
 applications:
 - name: fortunes-ui-ftasc
   host: fortunes-ui-ftasc
-  domain: cfapps.io
+  domain: tan.springapps.io
 #  path: target/fortune-teller-ui-0.0.1-SNAPSHOT.jar
   env:
     SPRING_PROFILES_ACTIVE: pact
     instance_port: 80
-    eureka_uri: http://eureka-ftasc.cfapps.io
+    eureka_uri: http://eureka-ftasc.tan.springapps.io
